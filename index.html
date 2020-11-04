@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>Calculadora Porcentagem</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+</head>
+<body>
+    <table class="table table-sm table-dark">
+        <thead>
+          <tr>
+            <th scope="col">Valor serviço</th>
+            <th scope="col">Parcelas</th>
+            <th scope="col">Valor sem juros</th>
+            <th scope="col">Valor com juros</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"><input type="text" id="valor" required></input></th>
+            <div class="operacoes">
+                <td>
+                    <button class="btn btn-primary col-md-1 mb-1" type="submit" id="nro1" value="2.93" onclick="calcula1()">1X</button>
+                    <button class="btn btn-primary col-md-1 mb-1" type="submit" id="nro2" value="3.60" onclick="calcula2()">2X</button>
+                    <button class="btn btn-primary col-md-1 mb-1" type="submit" id="nro3" value="3.94" onclick="calcula3()">3X</button>
+                    <button class="btn btn-primary col-md-1 mb-1" type="submit" id="nro4" value="4.27" onclick="calcula4()">4X</button>
+                    <button class="btn btn-primary col-md-1 mb-1" type="submit" id="nro5" value="4.60" onclick="calcula5()">5X</button>
+                    <button class="btn btn-primary col-md-1 mb-1" type="submit" id="nro6" value="4.93" onclick="calcula6()">6X</button>
+                    <button class="btn btn-primary col-md-1 mb-1" type="submit" id="nro7" value="5.84" onclick="calcula7()">7X</button>
+                    <button class="btn btn-primary col-md-1 mb-1" type="submit" id="nro8" value="6.17"onclick="calcula8()">8X</button>
+                    <button class="btn btn-primary col-md-1 mb-1" type="submit" id="nro9" value="6.49" onclick="calcula9()">9X</button>
+                    <button class="btn btn-primary col-md-1 mb-1" type="submit" id="nro10" value="6.82" onclick="calcula10()">10X</button>
+                    <button class="btn btn-primary col-md-1 mb-1" type="submit" id="nro11" value="7.14" onclick="calcula11()">11X</button>
+                    <button class="btn btn-primary col-md-1 mb-1" type="submit" id="nro12" value="7.45" onclick="calcula12()">12X</button>
+                </td>
+            </div>
+            <td id="resultado_calc_sem_juro">R$ 0</td>
+            <td id="resultado_calc_com_juro">R$ 0</td>
+          </tr>
+        </tbody>
+      </table>
+    
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+</body>
+</html>
